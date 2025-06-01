@@ -549,6 +549,9 @@ header #mainmenu li li a:hover {
 .hero-bg-suppple {
   background-image: url('../images/hero-banner/suppple.png');
 }
+.hero-bg-codespace {
+  background-image: url('../images/hero-banner/01codespace.png');
+}
 
 .no-animate {
     animation: none;
