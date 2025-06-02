@@ -2,22 +2,33 @@
 <html lang="en">
 
 <head>
-    <title>Nathan — Personal Portfolio Website</title>
-    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <title>Kevin — Personal Portfolio Website</title>
+    <link rel="icon" href="images/icon-personal.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
-    <meta content="" name="description" >
-    <meta content="" name="keywords" >
-    <meta content="" name="author" >
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
     <!-- CSS Files
     ================================================== -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
-    <link href="css/plugins.css" rel="stylesheet" type="text/css" >
-    <link href="css/style.css" rel="stylesheet" type="text/css" >
-    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQ,q+q+dE+r4bV0r7+l1m2l2p64uL6FwR8l0" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
     <!-- color scheme -->
-    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
 
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="dark-scheme">
@@ -26,7 +37,7 @@
             <span><a href="#">Scroll to top</a></span>
         </div>
         <div class="scrollbar-v show-on-scroll"></div>
-        
+
         <!-- page preloader begin -->
         <div id="de-loader"></div>
         <!-- page preloader close -->
@@ -43,11 +54,8 @@
                     <div class="d-menu-1 wow" data-wow-delay=".3s">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Me</a></li>
-                            <li><a href="services.html">What I Do</a></li>
-                            <li class="active"><a href="works.html">Works</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Hire Me</a></li>
+                            <li><a href="./index.html#about">About Me</a></li>
+                            <li class="active"><a href="works.html">My Works</a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,86 +65,129 @@
                 <div class="container">
                     <div class="row g-4 wow fadeInUp" data-wow-delay=".3s">
                         <div class="col-lg-4">
-                            <div class="hover relative overflow-hidden text-light">  
-                              <a href="work-single.html" class="overflow-hidden d-block relative">
-                                <h2 class="fs-40 abs-centered z-index-1 hover-op-0">Adidas</h2>
-                                <img src="images/works/1.webp" class="img-fluid hover-scale-1-2" alt="">
-
-                                <div class="absolute bottom-0 w-100 p-4 d-flex text-white justify-content-between">
-                                    <div class="d-tag-s2">E-COMMERCE WEBSITE</div>
-                                    <div class="fw-bold">2024</div>
-                                </div>
-                              </a>
+                            <div class="hover relative overflow-hidden text-light work-featured-size">
+                                <a href="case-four12.html" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">Four12</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">UX UI
+                                        Design</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-01">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
                         <div class="col-lg-4">
-                            <div class="hover relative overflow-hidden text-light">  
-                              <a href="work-single.html" class="overflow-hidden d-block relative">
-                                <h2 class="fs-40 abs-centered z-index-1 hover-op-0">WWF</h2>
-                                <img src="images/works/2.webp" class="img-fluid hover-scale-1-2" alt="">
-
-                                <div class="absolute bottom-0 w-100 p-4 d-flex text-white justify-content-between">
-                                    <div class="d-tag-s2">CUSTOM WEBSITE DESIGN</div>
-                                    <div class="fw-bold">2023</div>
-                                </div>
-                              </a>
+                            <div class="hover relative overflow-hidden text-light work-featured-size">
+                                <a href="case-codespace.html" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">CodeSpace</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">Web Development</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-02">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
                         <div class="col-lg-4">
-                            <div class="hover relative overflow-hidden text-light">  
-                              <a href="work-single.html" class="overflow-hidden d-block relative">
-                                <h2 class="fs-40 abs-centered z-index-1 hover-op-0">Honda</h2>
-                                <img src="images/works/3.webp" class="img-fluid hover-scale-1-2" alt="">
-
-                                <div class="absolute bottom-0 w-100 p-4 d-flex text-white justify-content-between">
-                                    <div class="d-tag-s2">FRONT-END DEVELOPMENT</div>
-                                    <div class="fw-bold">2022</div>
-                                </div>
-                              </a>
+                            <div class="hover relative overflow-hidden text-light work-featured-size">
+                                <a href="case-suppple.html" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">Suppple</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">Web Design &
+                                        Development</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-03">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
                         <div class="col-lg-4">
-                            <div class="hover relative overflow-hidden text-light">  
-                              <a href="work-single.html" class="overflow-hidden d-block relative">
-                                <h2 class="fs-40 abs-centered z-index-1 hover-op-0">Uniqlo</h2>
-                                <img src="images/works/4.webp" class="img-fluid hover-scale-1-2" alt="">
-
-                                <div class="absolute bottom-0 w-100 p-4 d-flex text-white justify-content-between">
-                                    <div class="d-tag-s2">Social Media Integration</div>
-                                    <div class="fw-bold">2021</div>
-                                </div>
-                              </a>
+                            <div class="hover relative overflow-hidden text-light work-featured-size">
+                                <a href="case-sassa.html" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">Sassa Grant Dashboard</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">UX UI
+                                        Design</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-04">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
                         <div class="col-lg-4">
-                            <div class="hover relative overflow-hidden text-light">  
-                              <a href="work-single.html" class="overflow-hidden d-block relative">
-                                <h2 class="fs-40 abs-centered z-index-1 hover-op-0">Playstation</h2>
-                                <img src="images/works/5.webp" class="img-fluid hover-scale-1-2" alt="">
-
-                                <div class="absolute bottom-0 w-100 p-4 d-flex text-white justify-content-between">
-                                    <div class="d-tag-s2">Website Optimization</div>
-                                    <div class="fw-bold">2020</div>
-                                </div>
-                              </a>
+                            <div class="hover relative overflow-hidden text-light work-featured-size">
+                                <a href="case-signalhill.html" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">Signal Hill Products</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">UX UI Design</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-05">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
                         <div class="col-lg-4">
-                            <div class="hover relative overflow-hidden text-light">  
-                              <a href="work-single.html" class="overflow-hidden d-block relative">
-                                <h2 class="fs-40 abs-centered z-index-1 hover-op-0">Wilson</h2>
-                                <img src="images/works/6.webp" class="img-fluid hover-scale-1-2" alt="">
+                            <div class="hover relative overflow-hidden text-light work-featured-size">
+                                <a href="case-sneakerrap.html" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">Sneakerrap</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">UX UI Design</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-06">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
-                                <div class="absolute bottom-0 w-100 p-4 d-flex text-white justify-content-between">
-                                    <div class="d-tag-s2">Landing Page Design</div>
-                                    <div class="fw-bold">2019</div>
-                                </div>
-                              </a>
+                        <div class="col-lg-4">
+                            <div class="hover relative overflow-hidden text-light work-featured-size work-incomplete">
+                                <a href="#" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">Rouser Agency</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">Web Design &
+                                        Development</span>
+                                    <span class="fs-12 z-index-11 absolute work-subheading d-hide">Coming Soon...</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-07">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="hover relative overflow-hidden text-light work-featured-size work-incomplete">
+                                <a href="#" class="overflow-hidden d-block relative inherit-parent">
+                                    <h2 class="fs-30 z-index-11 absolute work-heading">Personal Brand</h2>
+                                    <span class="fs-12 z-index-11 absolute work-subheading">Web Design &
+                                        Development</span>
+                                    <span class="fs-12 z-index-11 absolute work-subheading d-hide">Coming Soon...</span>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 d-flex text-white justify-content-between overlay-img-08">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 h-100 w-100 p-4 d-flex text-white justify-content-between overlay-dark">
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +196,7 @@
 
         </div>
         <!-- content close -->
-        
+
         <!-- footer begin -->
         <footer>
             <div class="container-fluid">
@@ -166,7 +217,8 @@
 
                         <div class="col-lg-6 text-lg-end">
                             <a href="contact.html">
-                                <h2 class="fs-84 fw-800 pe-3 shuffle wow fadeInLeft" data-wow-delay=".3s">Let's Talk</h2>
+                                <h2 class="fs-84 fw-800 pe-3 shuffle wow fadeInLeft" data-wow-delay=".3s">Let's Talk
+                                </h2>
                             </a>
                         </div>
                     </div>
@@ -183,4 +235,5 @@
     <script src="js/designesia.js"></script>
 
 </body>
+
 </html>

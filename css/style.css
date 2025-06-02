@@ -550,7 +550,16 @@ header #mainmenu li li a:hover {
   background-image: url('../images/hero-banner/suppple.png');
 }
 .hero-bg-codespace {
-  background-image: url('../images/hero-banner/01codespace.png');
+  background-image: url('../images/hero-banner/codespace.png');
+}
+.hero-bg-sassa {
+  background-image: url('../images/hero-banner/sassa.png');
+}
+.hero-bg-signalhill {
+  background-image: url('../images/hero-banner/01signal.jpeg');
+}
+.hero-bg-sneakerrap {
+  background-image: url('../images/hero-banner/sneakerrap.png');
 }
 
 .no-animate {
@@ -1400,10 +1409,26 @@ section.no-bg,
   width: 376px;
   height: 376px;
 }
+.d-hide {
+  display: none;
+}
+
+.work-incomplete:hover .d-hide {
+  display: block !important;
+}
+
+.work-incomplete:hover .work-subheading {
+  display: none;
+}
 
 .work-featured-size:hover .overlay-img-01,
 .work-featured-size:hover .overlay-img-02,
-.work-featured-size:hover .overlay-img-03 {
+.work-featured-size:hover .overlay-img-03,
+.work-featured-size:hover .overlay-img-04,
+.work-featured-size:hover .overlay-img-05,
+.work-featured-size:hover .overlay-img-06,
+.work-featured-size:hover .overlay-img-07,
+.work-featured-size:hover .overlay-img-08 {
   transform: scale(1.1);
 }
 
@@ -1428,19 +1453,41 @@ section.no-bg,
   background-image: url('../images/case-study/four12-feature-img.jpg');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .overlay-img-02 {
   background-image: url('../images/case-study/codespace-feature-img.jpg');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .overlay-img-03 {
   background-image: url('../images/case-study/suppple-feature-img.jpg');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-
+}
+.overlay-img-04 {
+  background-image: url('../images/case-study/sassa-feature-img.jpg');
+  background-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-img-05 {
+  background-image: url('../images/case-study/signalhill-feature-img.jpeg');
+  background-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-img-06 {
+  background-image: url('../images/case-study/sneakerrap-feature-img.avif');
+  background-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-img-07 {
+  background-image: url('../images/case-study/rouser-feature-img.png');
+  background-position: left center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-img-08 {
+  background-image: url('../images/case-study/brand-feature-img.png');
+  background-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-dark {
