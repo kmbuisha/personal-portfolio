@@ -556,7 +556,7 @@ header #mainmenu li li a:hover {
   background-image: url('../images/hero-banner/sassa.png');
 }
 .hero-bg-signalhill {
-  background-image: url('../images/hero-banner/01signal.jpeg');
+  background-image: url('../images/hero-banner/signal.jpeg');
 }
 .hero-bg-sneakerrap {
   background-image: url('../images/hero-banner/sneakerrap.png');
@@ -1480,7 +1480,7 @@ section.no-bg,
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-07 {
-  background-image: url('../images/case-study/rouser-feature-img.png');
+  background-image: url('../images/case-study/rouser-feature-img.jpg');
   background-position: left center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
