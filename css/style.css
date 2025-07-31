@@ -133,6 +133,7 @@ body .owl-stage .owl-item {
 #wrapper {
   position: relative;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 /* ================================================== */
@@ -478,11 +479,27 @@ header #mainmenu li li a:hover {
   z-index: 9;
 }
 
+/* Padding left & right */
+.plr-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .hero-headline-wrapper-01, .hero-headline-wrapper-02 {
   position: absolute;
   z-index: 99;
   overflow: hidden;
   scroll-behavior: smooth;
+}
+
+.position-bottom {
+  top: unset !important;
+  bottom: 12% !important;
+}
+
+.position-bottom-2 {
+  top: unset !important;
+  bottom: 5% !important;
 }
 
 .hero-headline-wrapper-01 {
@@ -508,7 +525,7 @@ header #mainmenu li li a:hover {
   }
   .hero-headline-02 {
     -webkit-text-stroke-width: 2px !important;
-    animation: fadeInLeftCustom 12s linear infinite !important;
+    animation: fadeInRightCustom 12s linear infinite !important;
   }
 }
   .hero-headline-02 {
@@ -519,7 +536,7 @@ header #mainmenu li li a:hover {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #fff;
   white-space: nowrap;
-  animation: fadeInLeftCustom 40s linear infinite;
+  animation: fadeInRightCustom 40s linear infinite;
 }
 
 /* Keyframes for fade in and slide from right */
@@ -541,7 +558,7 @@ header #mainmenu li li a:hover {
   }
 }
 /*=====================================================*/
-/*              Four12 Hero Banner                   */
+/*            Background Hero Banner                   */
 /*=====================================================*/
 .hero-bg-four12 {
   background-image: url('../images/hero-banner/four12.png');
@@ -553,13 +570,16 @@ header #mainmenu li li a:hover {
   background-image: url('../images/hero-banner/codespace.png');
 }
 .hero-bg-sassa {
-  background-image: url('../images/hero-banner/sassa.png');
+  background-image: url('../images/case-study/dashboard-feature-img.png');
 }
 .hero-bg-signalhill {
   background-image: url('../images/hero-banner/signal.jpeg');
 }
 .hero-bg-sneakerrap {
-  background-image: url('../images/hero-banner/sneakerrap.png');
+  background-image: url('../images/case-study/sneakerapp-feature-img.png');
+}
+.hero-bg-gtasks {
+  background-image: url('../images/case-study/gtasks.png');
 }
 
 .no-animate {
@@ -1402,9 +1422,97 @@ section.no-bg,
   position: relative;
   z-index: 1000;
 }
+
+section#navbar {
+    position: absolute;
+}
+
+.view-more-wrapper {
+  display: none;
+}
+
+.view-more-button {
+  margin: auto;
+  width: 200px;
+}
+
+.sticky-navbar {
+  position: sticky;
+  top: 15px;
+  z-index: 1000;
+}
+
+.navbar-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 99999;
+    background-color: #181C1F;
+}
+
+.view-more-button a:hover .border-squared,
+.navbar-wrapper .border-squared a:hover  {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.border-squared {
+    border: 0.4px solid #AAAAAA;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 997px) {
+  .navbar-wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .view-more-button {
+    margin: unset;
+  }
+  section#about {
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .navbar-wrapper {
+    display: none;
+  }
+}
 /* ================================================== */
 /* My Work Section */
 /* ================================================== */
+.logos-wrapper {
+  display: flex;
+  padding-top: 50px;
+  animation: scrollRight 20s linear alternate infinite;
+}
+@media screen and (max-width: 768px) {
+  .logos-wrapper {
+    animation: scrollRightMobile 50s linear alternate infinite;
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes scrollRightMobile {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1500%);
+  }
+}
+
 .work-featured-size {
   width: 376px;
   height: 376px;
@@ -1444,28 +1552,29 @@ section.no-bg,
 }
 
 .work-heading {
-  bottom: 11%;
+  bottom: 8%;
   left: 25px;
   z-index: 11 !important;
+  margin-bottom: unset;
 }
 
 .overlay-img-01 {
-  background-image: url('../images/case-study/four12-feature-img.jpg');
+  background-image: url('../images/case-study/sneakerapp-feature-img.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-02 {
-  background-image: url('../images/case-study/codespace-feature-img.jpg');
+  background-image: url('../images/case-study/dashboard-feature-img.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-03 {
-  background-image: url('../images/case-study/suppple-feature-img.jpg');
+  background-image: url('../images/case-study/gtasks.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-04 {
-  background-image: url('../images/case-study/sassa-feature-img.jpg');
+  background-image: url('../images/case-study/dashboard-feature-img.jpg');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1499,31 +1608,27 @@ section.no-bg,
 }
 
 .feature-link-wrapper {
-  top: 50%;
-  right: -50px;
-  transform: translateY(-50%);
-  width: auto;
-}
-
-.feature-link {
-  writing-mode: vertical-rl;
-  font-weight: 600 !important;
-  /* transition: padding-top 10.9s linear; */
-}
-
-.feature-arrow-down, .feature-arrow-right {
-  transition: all 0.3s ease-in-out;
-}
-
-.feature-link:hover .feature-arrow-down {
-    padding-top: 25px !important;
-}
-
-.feature-arrow-right {
   display: none;
 }
 
-@media screen and (max-width: 1368px) {
+.feature-link {
+  font-weight: 600 !important;
+}
+
+.feature-arrow-right {
+  padding-left: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feature-link:hover .feature-arrow-right {
+  padding-left: 25px !important;
+}
+
+/* .feature-arrow-right {
+  display: none;
+} */
+
+/* @media screen and (max-width: 1368px) {
   .feature-link-wrapper {
     position: unset !important;
     top: unset;
@@ -1544,7 +1649,7 @@ section.no-bg,
     padding-left: 10px;
     display: unset !important;
   }
-}
+} */
 /* ================================================== */
 
 
