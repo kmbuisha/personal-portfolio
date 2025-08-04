@@ -570,13 +570,13 @@ header #mainmenu li li a:hover {
   background-image: url('../images/hero-banner/codespace.png');
 }
 .hero-bg-sassa {
-  background-image: url('../images/case-study/dashboard-feature-img.png');
+  background-image: url('../images/case-study/dashboard.png');
 }
 .hero-bg-signalhill {
   background-image: url('../images/hero-banner/signal.jpeg');
 }
 .hero-bg-sneakerrap {
-  background-image: url('../images/case-study/sneakerapp-feature-img.png');
+  background-image: url('../images/case-study/sneakerapp.png');
 }
 .hero-bg-gtasks {
   background-image: url('../images/case-study/gtasks.png');
@@ -1427,13 +1427,13 @@ section#navbar {
     position: absolute;
 }
 
-.view-more-wrapper {
-  display: none;
-}
-
 .view-more-button {
   margin: auto;
   width: 200px;
+}
+
+section.no-top.no-hero {
+  padding-top: 25px !important;
 }
 
 .sticky-navbar {
@@ -1454,9 +1454,14 @@ section#navbar {
 }
 
 .view-more-button a:hover .border-squared,
-.navbar-wrapper .border-squared a:hover  {
+.navbar-wrapper .border-squared a:hover,
+.navbar-wrapper .border-squared .active  {
   text-decoration: line-through;
   text-decoration-thickness: 2px;
+}
+
+.navbar-wrapper .border-squared .active {
+  pointer-events: none;
 }
 
 .border-squared {
@@ -1512,6 +1517,20 @@ section#navbar {
     transform: translateX(-1500%);
   }
 }
+.work-featured-size .work-heading {
+  display: none;
+}
+
+.work-featured-size:hover .work-heading {
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.work-featured-size .overlay-dark {
+  height: 35% !important;
+  background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgba(0, 0, 0, 0.35) 95%);
+  transition: all 0.3s ease-in-out;
+}
 
 .work-featured-size {
   width: 376px;
@@ -1521,12 +1540,12 @@ section#navbar {
   display: none;
 }
 
-.work-incomplete:hover .d-hide {
-  display: block !important;
+.work-subheading {
+  display: none;
 }
 
-.work-incomplete:hover .work-subheading {
-  display: none;
+.work-featured-size:hover .work-subheading {
+  display: unset;
 }
 
 .work-featured-size:hover .overlay-img-01,
@@ -1536,7 +1555,8 @@ section#navbar {
 .work-featured-size:hover .overlay-img-05,
 .work-featured-size:hover .overlay-img-06,
 .work-featured-size:hover .overlay-img-07,
-.work-featured-size:hover .overlay-img-08 {
+.work-featured-size:hover .overlay-img-08,
+.work-featured-size:hover .overlay-img-09 {
   transform: scale(1.1);
 }
 
@@ -1558,13 +1578,17 @@ section#navbar {
   margin-bottom: unset;
 }
 
+.work-heading.codespace {
+  bottom: 15% !important;
+}
+
 .overlay-img-01 {
-  background-image: url('../images/case-study/sneakerapp-feature-img.png');
+  background-image: url('../images/case-study/sneakerapp.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-02 {
-  background-image: url('../images/case-study/dashboard-feature-img.png');
+  background-image: url('../images/case-study/dashboard.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1574,41 +1598,38 @@ section#navbar {
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-04 {
-  background-image: url('../images/case-study/dashboard-feature-img.jpg');
+  background-image: url('../images/case-study/podcast.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-05 {
-  background-image: url('../images/case-study/signalhill-feature-img.jpeg');
+  background-image: url('../images/case-study/signalhill.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-img-06 {
-  background-image: url('../images/case-study/sneakerrap-feature-img.avif');
-  background-position: center;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.overlay-img-07 {
-  background-image: url('../images/case-study/rouser-feature-img.jpg');
+  background-image: url('../images/case-study/suppple.png');
   background-position: left center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-img-08 {
-  background-image: url('../images/case-study/brand-feature-img.png');
+.overlay-img-07 {
+  background-image: url('../images/case-study/four12.png');
   background-position: center;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.overlay-dark {
-  background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0) 95%);
+.overlay-img-08 {
+  background-image: url('../images/case-study/codespace.png');
+  background-position: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-img-09 {
+  background-image: url('../images/case-study/rouser.png');
+  background-position: left center;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .fff, .fff:hover {
   color: #fff;
-}
-
-.feature-link-wrapper {
-  display: none;
 }
 
 .feature-link {

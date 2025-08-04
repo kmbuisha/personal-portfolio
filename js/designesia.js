@@ -2208,21 +2208,24 @@
 
   // Show sticky-navbar only after scrolling past .hero-container
   const navbar = document.querySelector(".sticky-navbar");
-  const hero = document.querySelector(".hero-container");
 
-  if (navbar) navbar.style.display = "none";
+  // Only run if navbar exists and does NOT have the class 'no-hero'
+  if (navbar && !navbar.classList.contains("no-hero")) {
+    const hero = document.querySelector(".hero-container");
+    navbar.style.display = "none";
 
-  function toggleNavbar() {
-    if (!navbar || !hero) return;
-    const heroBottom = hero.getBoundingClientRect().bottom;
-    if (heroBottom <= 0) {
-      navbar.style.display = "";
-    } else {
-      navbar.style.display = "none";
+    function toggleNavbar() {
+      if (!navbar || !hero) return;
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      if (heroBottom <= 0) {
+        navbar.style.display = "";
+      } else {
+        navbar.style.display = "none";
+      }
     }
-  }
 
-  window.addEventListener("scroll", toggleNavbar);
-  window.addEventListener("resize", toggleNavbar);
-  toggleNavbar();
+    window.addEventListener("scroll", toggleNavbar);
+    window.addEventListener("resize", toggleNavbar);
+    toggleNavbar();
+  }
 })(jQuery);
