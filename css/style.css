@@ -1460,7 +1460,8 @@ section.no-top.no-hero {
   text-decoration-thickness: 2px;
 }
 
-.navbar-wrapper .border-squared .active {
+.navbar-wrapper .border-squared .active,
+.pointer-events-none {
   pointer-events: none;
 }
 
