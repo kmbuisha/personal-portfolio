@@ -528,7 +528,18 @@ header #mainmenu li li a:hover {
     animation: fadeInRightCustom 12s linear infinite !important;
   }
 }
-  .hero-headline-02 {
+@media screen and (max-width: 540px) {
+  .position-bottom {
+    bottom: 20% !important;
+  }
+}
+@media screen and (max-width: 430px) and (max-height: 740px) {
+  .position-bottom {
+    bottom: 28% !important;
+  }
+}
+
+.hero-headline-02 {
   font-family: sans-serif;
   font-size: clamp(12px, 12vw, 100px);
   font-weight: 800;
