@@ -1538,6 +1538,7 @@ section.no-top.no-hero {
     transform: translateX(-1500%);
   }
 }
+
 .work-featured-size .work-heading {
   display: none;
 }
@@ -1573,11 +1574,7 @@ section.no-top.no-hero {
 .work-featured-size:hover .overlay-img-02,
 .work-featured-size:hover .overlay-img-03,
 .work-featured-size:hover .overlay-img-04,
-.work-featured-size:hover .overlay-img-05,
-.work-featured-size:hover .overlay-img-06,
-.work-featured-size:hover .overlay-img-07,
-.work-featured-size:hover .overlay-img-08,
-.work-featured-size:hover .overlay-img-09 {
+.work-featured-size:hover .overlay-img-08 {
   transform: scale(1.1);
 }
 
